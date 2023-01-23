@@ -76,5 +76,19 @@ function calculateTotal() {
 }
 
 
+document.querySelector("#phone-remove").addEventListener("click",()=>{
 
+    displayNon("#cart-item1")
+});
+document.querySelector("#case-remove").addEventListener("click",()=>{
 
+    displayNon("#cart-item2")
+});
+function displayNon(id){
+    let cart_item1=document.querySelector(id);
+    cart_item1.style="display:none" 
+}
+
+document.getElementById("check-btn").addEventListener("click",()=>{
+    alert("Order successfully")
+})
